@@ -1,0 +1,293 @@
+.html{
+    --section-background-color: linear-gradient(
+    to bottom left,
+    rgba(245, 224, 134, 0.582),
+    rgba(12, 8, 24, 0.904)
+  );
+
+  --image-gradient: linear-gradient(
+    to bottom left,
+    rgba(17, 16, 16, 0.678),
+    rgba(12, 10, 22, 0.863)
+  );
+}
+/* Opsi track */
+::-webkit-scrollbar{
+  display: none;
+}
+/*  */
+.sticky {
+    background-color: #fcfcfca9 !important;
+    transition: all 0.3s ease-out 0s !important;
+    box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
+    backdrop-filter: blur(15px) !important;
+  }
+  
+.navbar {
+  position: fixed !important;
+  transition: all 0.3s ease-out 0s !important;
+  background-color: #f5f5f5e7 !important;
+  backdrop-filter: blur(15px) !important;
+  padding: 0.8rem 2rem !important;
+  font-size: 1rem !important;
+}
+.navbar-toggler {
+  position: relative !important;
+  background-color: transparent !important;
+  border-color: transparent !important;
+  border: none !important;
+  outline: none!important;
+  box-shadow: none !important;
+}
+.navbar-toggler span {
+  display: block !important;
+  background-color: #000000 !important;
+  height: 4px !important;
+  width: 27px !important;
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+  transform: rotate(0deg) !important;
+  left: 0 !important;
+  opacity: 1 !important;
+  font-size: 300;
+  
+  /* border: 2px solid #000 !important; */
+}
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: 0 !important;
+}
+
+.navbar-toggler span:nth-child(1),
+.navbar-toggler span:nth-child(3) {
+  transition: transform 0.35s ease-in-out !important;
+  transition: transform 0.35s ease-in-out !important;
+}
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+  position: absolute !important;
+  left: 12px !important;
+  top: 10px !important;
+  transform: rotate(135deg) !important;
+  opacity: 0.9 !important;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+  height: 12px !important;
+  visibility: hidden !important;
+  background-color: transparent !important;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+  position: absolute !important;
+  left: 12px !important;
+  top: 10px !important;
+  transform: rotate(-135deg) !important;
+  opacity: 0.9 !important;
+}
+@media (max-width: 767px) {
+  .navbar {
+    padding: 0.8rem 0.7rem !important;  
+    font-size: 1.5rem !important;
+    background-color: #f5f5f5e7 !important;
+    backdrop-filter: blur(15px) !important;
+    border-radius: 0 0 15px 15px;
+  }
+  .sticky {
+    background-color: #fcfcfc9c !important;
+    transition: all 0.3s ease-out 0s !important;
+    box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
+    backdrop-filter: blur(15px) !important;
+  }
+  .navbar-collapse{
+    transition: 0.2s ease-in-out !important;
+  }
+  .navbar-brand{
+    font-size: 1.4rem !important;
+    font-weight: 500;
+    color: #000000 !important;
+  }
+  .navbar-nav{
+    height: 30rem !important;
+    gap: 15px !important;
+    padding-top: 6rem !important;
+    font-weight: 1em;
+    align-items: center;
+    
+  }
+  .navbar-nav .nav-item a{
+    color: #000000 !important;
+    text-align: center !important;
+  }
+  .navbar-nav .nav-item a::after {
+    display: none !important;
+  }
+}
+.navbar-nav .nav-link {
+  color: rgb(26, 25, 25) !important;
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+}
+.navbar-nav .nav-item {
+  position: relative; 
+  margin-left: 20px;
+}
+
+.navbar-nav .nav-item a {
+  font-weight: 400;
+  transition: all 0.3s ease-out 0s;
+  position: relative;
+  z-index: 1;
+}
+
+.navbar-nav .nav-item a::after {
+  content: "";
+  position: relative;
+  display: block;
+  height: 2px;
+  width: 0;
+  border-radius: 10px;
+  background: #8f8f8f;
+  bottom: 2px;
+  left: 50%;
+  z-index: -1;
+  transition: all 0.3s ease-out 0s;
+}
+
+.navbar-nav .nav-item a:hover::after {
+  width: 50%;
+  left: 25%;
+}  
+
+/* HOME SECTION */
+/* Media Screen Hp */
+@media(max-width:767px){
+  .judultitle{
+    font-size: 2rem !important;
+    font-weight: 500;
+    padding: 2rem 2rem !important;
+    
+  }
+  .btn-home{
+    margin:20px;
+    
+  }
+  .home-content{
+    padding-top: 5px;
+  }
+  .slider-container .slick-slide img {
+    width: 100%; /* Pastikan gambar mengisi seluruh lebar slide */
+    height: 100%; /* Pastikan gambar mengisi seluruh tinggi slide */
+    /* Atur gambar agar sesuai dengan ukuran slide */
+    
+  }
+  .home-section{
+    padding: 9rem  2rem 2rem  !important;
+  
+  }
+  
+}
+@media(min-width:767px){
+  .judultitle {
+    text-align: center;
+  }
+  .home-section{
+    padding: 15rem  2rem 2rem ;
+  
+  }
+}
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+ 
+  background-image: url('../src/assets/candiborobuddur-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: blur(0.7px); /* Terapkan blur hanya pada elemen background */
+  z-index: -1; /* Pastikan background ada di belakang konten */
+  
+}
+.home-content{
+  
+}
+
+
+
+.slider-container .slick-slide img {
+  width: 100%; /* Pastikan gambar mengisi seluruh lebar slide */
+  height: 100%; /* Pastikan gambar mengisi seluruh tinggi slide */
+  /* Atur gambar agar sesuai dengan ukuran slide */
+  
+  border-radius: 40px;
+}
+
+
+
+/* DESTINATION PAGES */
+
+#borobudur{
+  border: 2px solid;
+  background-color: #acacace3;
+}
+@media(max-width:767px){
+.borobudur-section{
+  
+  margin-top: 6rem;
+  border-radius: 15px;
+  padding: 2rem 2rem ;
+  background-color: #ffffff;
+}
+.danautoba-section{
+  
+  margin-top: 2rem;
+  border-radius: 15px;
+  padding: 2rem 2rem ;
+  background-color: #ffffff;
+}
+
+.desti-boro{
+  position: relative;
+  margin-bottom: 4rem;
+
+}
+.borobudur-content h1{
+  margin-bottom: 10px;
+}
+.atraksi-utama p{
+  margin-top: 5px;
+}
+}
+@media(min-width:767px){
+  .borobudur-section{
+  
+    margin-top: 6rem;
+    border-radius: 15px;
+    padding: 2rem 2rem ;
+    background-color: #ffffff;
+  }
+  .boro-content{
+    padding: 3rem 4rem 3rem ;
+  }
+  .boro-content p{
+    font-size: 1.4rem;
+  }
+  .atraksi-utama{
+    margin: 5rem 2rem 2rem 2rem;
+
+  }
+  .atraksi-utama{
+    text-align: center;
+    
+  }
+  .slideratraksi{
+    text-align: center;
+  }
+  .col-slider{
+    margin-left: 17rem;
+    width: 30rem !important;
+  }
+}
+
